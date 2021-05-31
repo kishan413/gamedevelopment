@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding:  0px;
+    box-sizing: border-box;
+}
+
+.main_div{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center_div{
+    height: 50vh;
+    width: 30%;
+    background-color: rgb(69, 97, 88);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 3px 1px rgb(66, 223, 173, 0.8);
+    border-radius: 50px 0px 50px 0px;
+}
+
+.center_div h1{
+    color: rgb(240, 239, 248);
+    text-shadow: 2px 2px 3px rgba(214, 39, 39, 0.6);
+}
+
+.center_div #result{
+    color: rgb(240, 239, 248);
+}
+.center_div #computer{
+    color: wheat
+}
+.center_div #game{
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 100px;
+    border-radius: 30px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    text-align: center;
+}
+.center_div #btn{
+    width: 40px;
+    height: 24px;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: -1px 1px 1px rgba(0, 0,0, .6);
+    font-weight: 600;
+}
+.center_div #game:focus{
+    border:rgb(69, 97, 88)
+}
+.center_div #rules{
+    color: rgb(209, 209, 209);
+}
+.center_div #rules span{
+    color: red;
+    margin: 10px 0px;
+}
+
+.center_div p sup{
+    visibility: hidden;
+}
+
+@media  screen and (max-width: 1150px) {
+    .center_div{
+        width: 70vh;
+    }
+}
+@media  screen and (max-width: 600px) {
+    .center_div{
+        width: 50vh;
+    }
+}
