@@ -12,6 +12,7 @@ const App = () => {
         function randomNumber(min, max) {
             const array = ["snake", "water", "gun"]
             const random = Math.round(Math.random() * (max - min) + min);
+            console.log(random)
             if (data === "") {
                 computer.innerHTML = "computer choise is : "
             } else {
@@ -74,10 +75,11 @@ const App = () => {
             <div className="main_div">
                 <div className="center_div">
                     <h1>snake, water and gun</h1>
-                    <p id="rules"> <span>rules<sup>*</sup> </span>: only choose one Snake, Water And Gun</p>
+                    <p id="rules"> <span>rules<sup>*</sup> </span>: only choose one snake, water And gun</p>
                     <p id="computer"> </p>
                     <br />
                     <input type="text"  name="game" id="game" value={data.trim()} onChange={(e) => {
+                        // console.log(e)
                         setData(e.target.value);
                     }} />
                     <input type="submit" value="play" onClick={submit} id="btn"/>

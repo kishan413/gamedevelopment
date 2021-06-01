@@ -78,3 +78,8 @@
         width: 50vh;
     }
 }
+@media screen and (max-width: 400px){
+    .center_div{
+        width: 100%;
+    }
+}
